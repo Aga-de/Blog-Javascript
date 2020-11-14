@@ -168,3 +168,42 @@ body {
   margin-top: 0;
   font-size: 25px;
 }
+
+/*Media*/
+@media (max-width: 576px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .post {
+    &.active {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    }
+
+  }
+  .two {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+  }
+
+  .one {
+    background-color: $color-one;
+    .section-title {
+      color: $color-three;
+    }
+    a {
+      color: $color-two;
+    }
+  }
+
+  .authors {
+    li {
+      margin-bottom: 0;
+    }
+  }
+  
+}

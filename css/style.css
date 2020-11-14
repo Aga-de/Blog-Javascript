@@ -164,4 +164,40 @@ body {
   margin-top: 0;
   font-size: 25px;
 }
+
+/*Media*/
+@media (max-width: 576px) {
+  .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .post.active {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .two {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    left: 50%;
+  }
+  .one {
+    background-color: #f7ede2;
+  }
+  .one .section-title {
+    color: #f28482;
+  }
+  .one a {
+    color: #84a59d;
+  }
+  .authors li {
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
