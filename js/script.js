@@ -14,7 +14,6 @@
     }
 
     /* [DONE] add class 'active' to the clicked link */
-
     console.log('clickedElement:', clickedElement);
     clickedElement.classList.add('active');
 
@@ -90,3 +89,4 @@ const generateTitleLinks = function(){
 generateTitleLinks();
 
 }
+

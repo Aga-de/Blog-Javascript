@@ -3,10 +3,11 @@
 /* Variables */
 
 $color-light: #f5cac3;
-$color-dark:#22223B;
+$color-dark: #22223b;
 $color-one:  #f7ede2;
 $color-two: #84a59d;
 $color-three: #f28482;
+$color-four: #f6bd60;
 
 $font-logo: 'Caveat', cursive;
 $font-header: 'Montserrat', sans-serif;
@@ -98,6 +99,7 @@ body {
   padding: 0;
   .active {
     font-weight: bold;
+    color: $color-four;
   }
   a {
     text-decoration: none;
@@ -126,9 +128,28 @@ body {
 /* Post */
 
 .post {
-  display: none;
+  position: absolute;
+  opacity: -1;
+  transition: all 1s;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+ 
   &.active {
-    display: block;
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
   }
 }
 
@@ -144,6 +165,6 @@ body {
 }
 
 .post-title {
-  text-align: center;
+  margin-top: 0;
   font-size: 25px;
 }
