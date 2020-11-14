@@ -2,12 +2,15 @@
 
 /* Variables */
 
-$color-light: #fff;
-$color-dark: #444;
+$color-light: #f5cac3;
+$color-dark:#22223B;
+$color-one:  #f7ede2;
+$color-two: #84a59d;
+$color-three: #f28482;
 
-$font-logo: 'Sacramento', cursive;
-$font-header: 'Oswald', sans-serif;
-$font-text: 'Source Sans Pro', sans-serif;
+$font-logo: 'Caveat', cursive;
+$font-header: 'Montserrat', sans-serif;
+$font-text: 'Lato', sans-serif;
 
 /* Global */
 
@@ -16,7 +19,7 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background: $color-light;
+  background: $color-one;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
@@ -34,6 +37,7 @@ body {
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+  color: $color-one;
   span {
     text-transform: none;
     font-weight: 400;
@@ -52,16 +56,27 @@ body {
   flex: 1 0 0;
 }
 
+.one {
+  background-color: $color-three;
+  border: solid 2px $color-one;
+  border-radius: 10px;
+}
+
+.two {
+  background-color: $color-one;
+  .section-title {
+    color: $color-three;
+  }
+}
+
 .posts {
   flex: 2 0 0;
 }
 
 .sidebar, .posts {
-  background: $color-light;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
-  border-radius: 5px;
+  color: $color-three;
 }
 
 /* Logo */
@@ -72,6 +87,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
+  color: $color-two;
 }
 
 /* Lists */
@@ -83,6 +99,14 @@ body {
   .active {
     font-weight: bold;
   }
+  a {
+    text-decoration: none;
+    color: $color-two;
+  }
+}
+
+.titles a {
+  color: $color-light;
 }
 
 .list-horizontal {
@@ -117,4 +141,9 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+}
+
+.post-title {
+  text-align: center;
+  font-size: 25px;
 }
