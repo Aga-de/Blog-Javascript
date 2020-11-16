@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f7ede2;
+  background: #edf6f9;
   font-family: "Lato", sans-serif;
   color: #22223b;
   font-weight: 300;
@@ -24,7 +24,7 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #f7ede2;
+  color: #edf6f9;
 }
 
 .section-title span {
@@ -46,17 +46,17 @@ body {
 }
 
 .one {
-  background-color: #f28482;
-  border: solid 2px #f7ede2;
+  background-color: #006d77;
+  border: solid 2px #edf6f9;
   border-radius: 10px;
 }
 
 .two {
-  background-color: #f7ede2;
+  background-color: #edf6f9;
 }
 
 .two .section-title {
-  color: #f28482;
+  color: #006d77;
 }
 
 .posts {
@@ -67,7 +67,7 @@ body {
 .sidebar, .posts {
   margin-right: 10px;
   padding: 40px;
-  color: #f28482;
+  color: #006d77;
 }
 
 /* Logo */
@@ -77,7 +77,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
-  color: #84a59d;
+  color: #e29578;
 }
 
 /* Lists */
@@ -89,16 +89,16 @@ body {
 
 .list .active {
   font-weight: bold;
-  color: #f6bd60;
+  color: #e29578;
 }
 
 .list a {
   text-decoration: none;
-  color: #84a59d;
+  color: #83c5be;
 }
 
 .titles a {
-  color: #f5cac3;
+  color: #edf6f9;
 }
 
 .list-horizontal li {
@@ -188,13 +188,13 @@ body {
     left: 50%;
   }
   .one {
-    background-color: #f7ede2;
+    background-color: #edf6f9;
   }
   .one .section-title {
-    color: #f28482;
+    color: #006d77;
   }
   .one a {
-    color: #84a59d;
+    color: #83c5be;
   }
   .authors li {
     margin-bottom: 0;

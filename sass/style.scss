@@ -2,12 +2,12 @@
 
 /* Variables */
 
-$color-light: #f5cac3;
+$color-light: #ffddd2;
 $color-dark: #22223b;
-$color-one:  #f7ede2;
-$color-two: #84a59d;
-$color-three: #f28482;
-$color-four: #f6bd60;
+$color-one:  #edf6f9;
+$color-two: #83c5be;
+$color-three: #006d77;
+$color-four: #e29578;
 
 $font-logo: 'Caveat', cursive;
 $font-header: 'Montserrat', sans-serif;
@@ -88,7 +88,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
-  color: $color-two;
+  color: $color-four;
 }
 
 /* Lists */
@@ -108,7 +108,7 @@ body {
 }
 
 .titles a {
-  color: $color-light;
+  color: $color-one;
 }
 
 .list-horizontal {
