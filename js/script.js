@@ -184,7 +184,6 @@ generateTags();
 
   }
 
-
 const addClickListenersToTags = function(){
   /* find all links to tags */
   const linkTags = document.querySelectorAll('a[href^="#tag-"]');
@@ -198,6 +197,7 @@ const addClickListenersToTags = function(){
 }
 
 addClickListenersToTags(); 
+
 
 const generateAuthors = function() {
   /* find all articles */
@@ -264,7 +264,7 @@ const generateAuthors = function() {
     /*START LOOP: for each found author link*/
         for (let foundAuthor of foundAuthors){
 
-          /*add class active*/;
+          /*add class active*/
           foundAuthor.classList.add('active');
         }
     
@@ -274,19 +274,18 @@ const generateAuthors = function() {
   }
 
   const addClickListenersToAuthors = function(){
-    /* find all links to tags */
+    /* find all links to authors */
     const linkAuthors = document.querySelectorAll('a[href^="#author-"]');
     console.log(linkAuthors);
   
     /* START LOOP: for each link */
     for (let linkAuthor of linkAuthors){
-      /* add tagClickHandler as event listener for that link */
+      /* add authorClickHandler as event listener for that link */
       linkAuthor.addEventListener('click', authorClickHandler);
     }
     /* END LOOP: for each link */
   }
 
   addClickListenersToAuthors();
-
 
 }

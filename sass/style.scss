@@ -126,9 +126,13 @@ body {
   }
 }
 
-.post-author {
+.post-author a {
   display: inline;
   text-decoration: none;
+  color: $color-four;
+  &:active {
+    color: $color-three;
+  }
 }
 
 /* Post */

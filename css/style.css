@@ -111,9 +111,14 @@ body {
   margin-bottom: 12px;
 }
 
-.post-author {
+.post-author a {
   display: inline;
   text-decoration: none;
+  color: #e29578;
+}
+
+.post-author a:active {
+  color: #006d77;
 }
 
 /* Post */
