@@ -114,6 +114,7 @@ body {
 .list-horizontal {
   li {
     display: inline-block;
+    margin-left: 6px;
   }
 }
 
@@ -123,6 +124,11 @@ body {
   li {
     margin-bottom: 12px;
   }
+}
+
+.post-author {
+  display: inline;
+  text-decoration: none;
 }
 
 /* Post */

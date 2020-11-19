@@ -103,11 +103,17 @@ body {
 
 .list-horizontal li {
   display: inline-block;
+  margin-left: 6px;
 }
 
 /* Authors */
 .authors li {
   margin-bottom: 12px;
+}
+
+.post-author {
+  display: inline;
+  text-decoration: none;
 }
 
 /* Post */
