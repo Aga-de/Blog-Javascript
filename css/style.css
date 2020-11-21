@@ -6,9 +6,9 @@
 }
 
 body {
-  background: #edf6f9;
+  background: #ffffff;
   font-family: "Lato", sans-serif;
-  color: #22223b;
+  color: #495867;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -24,60 +24,57 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #edf6f9;
+  color: #ffffff;
 }
 
 .section-title span {
   text-transform: none;
   font-weight: 400;
-  color: #47477c;
+  color: #778b9f;
 }
 
 /* Layout */
 .wrapper {
-  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
 }
 
 .sidebar {
-  -ms-flex: 1 0 0px;
-      flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .one {
-  background-color: #006d77;
-  border: solid 2px #edf6f9;
+  background-color: #102542;
+  border: solid 2px #ffffff;
   border-radius: 10px;
 }
 
 .two {
-  background-color: #edf6f9;
+  background-color: #ffffff;
 }
 
 .two .section-title {
-  color: #006d77;
+  color: #102542;
 }
 
 .posts {
-  -ms-flex: 2 0 0px;
-      flex: 2 0 0;
+  flex: 2 0 0;
 }
 
 .sidebar, .posts {
   margin-right: 10px;
   padding: 40px;
-  color: #006d77;
+  color: #102542;
 }
 
 /* Logo */
 .logo {
-  font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 104px;
   line-height: 1;
   text-align: center;
-  color: #e29578;
+  color: #f87060;
 }
 
 /* Lists */
@@ -89,16 +86,16 @@ body {
 
 .list .active {
   font-weight: bold;
-  color: #e29578;
+  color: #f87060;
 }
 
 .list a {
   text-decoration: none;
-  color: #83c5be;
+  color: #cdd7d6;
 }
 
 .titles a {
-  color: #edf6f9;
+  color: #ffffff;
 }
 
 .list-horizontal li {
@@ -114,11 +111,11 @@ body {
 .post-author a {
   display: inline;
   text-decoration: none;
-  color: #e29578;
+  color: #f87060;
 }
 
 .post-author a:active {
-  color: #006d77;
+  color: #102542;
 }
 
 /* Post */
@@ -127,35 +124,25 @@ body {
   opacity: -1;
   transition: all 1s;
   z-index: 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .post .post-content {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   width: 40%;
 }
 
 .post.active {
   opacity: 1;
   z-index: 1;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .post-author {
@@ -163,7 +150,6 @@ body {
 }
 
 .post-tags {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -176,64 +162,60 @@ body {
   font-size: 25px;
 }
 
+.tags li {
+  display: inline-block;
+  padding-left: 4px;
+}
+
+.tags li .tag-size-1 {
+  font-size: 20px;
+}
+
+.tags li .tag-size-2 {
+  font-size: 25px;
+}
+
+.tags li .tag-size-3 {
+  font-size: 30px;
+}
+
+.tags li .tag-size-4 {
+  font-size: 35px;
+}
+
+.tags li .tag-size-5 {
+  font-size: 40px;
+}
+
 /*Media*/
 @media (max-width: 576px) {
   .wrapper {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .post.active {
     position: absolute;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
   .two {
     position: absolute;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     left: 50%;
   }
   .one {
-    background-color: #edf6f9;
+    background-color: #ffffff;
   }
   .one .section-title {
-    color: #006d77;
+    color: #102542;
   }
   .one a {
-    color: #83c5be;
+    color: #cdd7d6;
   }
   .authors li {
     margin-bottom: 0;
   }
 }
 
-.tag-size-1 {
-  font-size: 20px;
-}
-
-.tag-size-2 {
-  font-size: 25px;
-}
-
-.tag-size-3 {
-  font-size: 30px;
-}
-
-.tag-size-4 {
-  font-size: 35px;
-}
-
-.tag-size-5 {
-  font-size: 40px;
-}
-
-.tags li {
-  display: inline-block;
-  padding-left: 4px;
-}
 /*# sourceMappingURL=style.css.map */

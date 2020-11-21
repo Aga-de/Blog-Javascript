@@ -421,5 +421,4 @@ const templates = {
 
   addClickListenersToAuthors();
 
-
 }

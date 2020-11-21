@@ -2,12 +2,12 @@
 
 /* Variables */
 
-$color-light: #ffddd2;
-$color-dark: #22223b;
-$color-one:  #edf6f9;
-$color-two: #83c5be;
-$color-three: #006d77;
-$color-four: #e29578;
+$color-light: #b3a394;
+$color-dark: #495867;
+$color-one:  #ffffff;
+$color-two: #cdd7d6;
+$color-three: #102542;
+$color-four: #f87060;
 
 $font-logo: 'Caveat', cursive;
 $font-header: 'Montserrat', sans-serif;
@@ -83,7 +83,7 @@ body {
 /* Logo */
 
 .logo {
-  font-family: $font-logo;
+  font-family: $font-header;
   font-weight: 400;
   font-size: 104px;
   line-height: 1;
@@ -179,6 +179,32 @@ body {
   font-size: 25px;
 }
 
+
+.tags li {
+  display: inline-block;
+  padding-left: 4px;
+
+  .tag-size-1 {
+    font-size: 20px;
+  }
+  
+  .tag-size-2 {
+    font-size: 25px;
+  }
+  
+  .tag-size-3 {
+    font-size: 30px;
+  }
+  
+  .tag-size-4 {
+    font-size: 35px;
+  }
+  
+  .tag-size-5 {
+    font-size: 40px;
+  }
+}
+
 /*Media*/
 @media (max-width: 576px) {
   .wrapper {
@@ -219,27 +245,4 @@ body {
 }
 
 
-.tag-size-1 {
-  font-size: 20px;
-}
 
-.tag-size-2 {
-  font-size: 25px;
-}
-
-.tag-size-3 {
-  font-size: 30px;
-}
-
-.tag-size-4 {
-  font-size: 35px;
-}
-
-.tag-size-5 {
-  font-size: 40px;
-}
-
-.tags li {
-  display: inline-block;
-  padding-left: 4px;
-}
