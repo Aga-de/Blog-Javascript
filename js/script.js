@@ -50,7 +50,8 @@ optArticleTagsSelector = '.post-tags .list',
 optArticleAuthorsSelector = '.post-author',
 optTagsListSelector = '.tags.list',
 optCloudClassCount = 5,
-optCloudClassPrefix = 'tag-size-';
+optCloudClassPrefix = 'tag-size-',
+optAuthorsListSelector = '.authors';
 
 const generateTitleLinks = function(customSelector = ''){
 
@@ -181,7 +182,7 @@ const generateTags = function() {
   }
 
   /*[NEW] find list of tags in right column */
-  const tagList = document.querySelector('.tags');
+  const tagList = document.querySelector(optTagsListSelector);
 
   /*[NEW] create variable for all links HTML code */
   const tagsParams = calculateTagsParams(allTags);
@@ -268,6 +269,9 @@ addClickListenersToTags();
 
 
 const generateAuthors = function() {
+  /* [NEW] create an object allAuthors */
+  let allAuthors = {};
+
   /* find all articles */
   const articles = document.querySelectorAll(optArticleSelector);
 
@@ -291,11 +295,37 @@ const generateAuthors = function() {
       html = html + linkHTML;
       console.log(html);     
 
+      /*[NEW] check if this link is NOT already in allAuthors*/
+      if (!allAuthors[articleAuthor]) {
+        /*[NEW] add author to allAuthors object */
+        allAuthors[articleAuthor] = 1;
+      } else {
+        allAuthors[articleAuthor]++;
+      }
+
       /* insert HTML of all the links into the tags wrapper */
       authorWrapper.innerHTML = html;
 
   /*END LOOP: for every article*/   
     }
+
+  /*[NEW] find list of authors in right column */
+  const authorsList = document.querySelector(optAuthorsListSelector);
+  
+  /* [NEW] create variable for all links HTML code */
+  let allAuthorsHTML = '';
+
+  /* [NEW] START LOOP: for each author in allAuthors: */
+  for (let articleAuthor in allAuthors) {
+    /*[NEW] generate code of a link and add it to allAuthorsHTML */
+    allAuthorsHTML += '<li><a href="#author-' + articleAuthor + '">' + articleAuthor + '(' + allAuthors[articleAuthor] + ')</a></li>';
+  }
+  /* [NEW] END LOOP: for each author in allAuthors: */
+
+  /*[NEW] add HTML from allAuthorsHTML to authorsList */
+  authorsList.innerHTML = allAuthorsHTML;
+
+
   }
 
   generateAuthors();
